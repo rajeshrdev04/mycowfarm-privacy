@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – My Cow Farm</title>
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+      background: #f5f7fa;
+      color: #2d3748;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* ── Header Banner ── */
+    .site-header {
+      background: linear-gradient(135deg, #2e7d32, #43a047);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    .site-header .app-icon {
+      width: 80px;
+      height: 80px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      margin-bottom: 16px;
+    }
+
+    .site-header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .site-header .subtitle {
+      font-size: 14px;
+      opacity: 0.85;
+      margin-top: 6px;
+    }
+
+    .meta-badges {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .badge {
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 12px;
+      color: #fff;
+    }
+
+    /* ── Main Content ── */
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 24px 60px;
+    }
+
+    /* ── Table of Contents ── */
+    .toc {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 36px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    .toc h2 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #2e7d32;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 14px;
+    }
+
+    .toc ol {
+      padding-left: 20px;
+    }
+
+    .toc li {
+      margin-bottom: 6px;
+    }
+
+    .toc a {
+      color: #2e7d32;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .toc a:hover { text-decoration: underline; }
+
+    /* ── Section Cards ── */
+    .section {
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+      scroll-margin-top: 20px;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1a202c;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e8f5e9;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section h2 .num {
+      background: #2e7d32;
+      color: #fff;
+      border-radius: 6px;
+      padding: 2px 9px;
+      font-size: 13px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .section h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #2e7d32;
+      margin: 18px 0 8px;
+    }
+
+    .section p {
+      color: #4a5568;
+      margin-bottom: 10px;
+    }
+
+    .section ul, .section ol {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .section li {
+      color: #4a5568;
+      margin-bottom: 5px;
+    }
+
+    .section a {
+      color: #2e7d32;
+      text-decoration: none;
+    }
+
+    .section a:hover { text-decoration: underline; }
+
+    /* ── Highlight boxes ── */
+    .highlight {
+      background: #f0fdf4;
+      border-left: 4px solid #2e7d32;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      margin: 14px 0;
+      font-size: 14px;
+      color: #276749;
+    }
+
+    .highlight-warn {
+      background: #fff8e1;
+      border-left: 4px solid #f59e0b;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      margin: 14px 0;
+      font-size: 14px;
+      color: #78350f;
+    }
+
+    /* ── Tables ── */
+    .table-wrap { overflow-x: auto; margin: 14px 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    thead tr {
+      background: #e8f5e9;
+    }
+
+    th {
+      text-align: left;
+      padding: 10px 14px;
+      font-weight: 700;
+      color: #1a202c;
+      border-bottom: 2px solid #c8e6c9;
+    }
+
+    td {
+      padding: 9px 14px;
+      color: #4a5568;
+      border-bottom: 1px solid #edf2f7;
+    }
+
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #f7fffe; }
+
+    /* ── Code / inline code ── */
+    code {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 13px;
+      font-family: 'Courier New', monospace;
+      color: #2e7d32;
+    }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background: linear-gradient(135deg, #e8f5e9, #f0fdf4);
+      border: 1px solid #c8e6c9;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 8px;
+    }
+
+    .contact-card p {
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #2d3748;
+    }
+
+    .contact-card a {
+      color: #2e7d32;
+      font-weight: 600;
+    }
+
+    /* ── Footer ── */
+    .site-footer {
+      text-align: center;
+      padding: 28px 16px;
+      font-size: 12px;
+      color: #a0aec0;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .site-header { padding: 36px 16px 28px; }
+      .site-header h1 { font-size: 22px; }
+      .section { padding: 20px 18px; }
+      .container { padding: 24px 14px 48px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header class="site-header">
+    <div class="app-icon">🐄</div>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">My Cow Farm – Dairy Farm Management App</p>
+    <div class="meta-badges">
+      <span class="badge">📅 Effective: April 2026</span>
+      <span class="badge">👤 Rajesh Raju</span>
+      <span class="badge">✉️ mycowfarm.app@gmail.com</span>
+    </div>
+  </header>
+
+  <!-- ── Content ── -->
+  <main class="container">
+
+    <!-- Table of Contents -->
+    <nav class="toc">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#s1">Introduction</a></li>
+        <li><a href="#s2">Information We Collect</a></li>
+        <li><a href="#s3">How We Use Your Information</a></li>
+        <li><a href="#s4">Data Storage</a></li>
+        <li><a href="#s5">Third-Party Services</a></li>
+        <li><a href="#s6">Data Security</a></li>
+        <li><a href="#s7">Data Retention &amp; Deletion</a></li>
+        <li><a href="#s8">Your Rights</a></li>
+        <li><a href="#s9">Children's Privacy</a></li>
+        <li><a href="#s10">Changes to This Policy</a></li>
+        <li><a href="#s11">Contact Us</a></li>
+      </ol>
+    </nav>
+
+    <!-- 1. Introduction -->
+    <section class="section" id="s1">
+      <h2><span class="num">1</span> Introduction</h2>
+      <p>
+        My Cow Farm (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is committed to protecting your privacy.
+        This Privacy Policy explains how we collect, use, store, and protect your information
+        when you use the My Cow Farm mobile application (&ldquo;App&rdquo;).
+      </p>
+      <div class="highlight">
+        By using the App, you agree to the practices described in this policy.
+      </div>
+    </section>
+
+    <!-- 2. Information We Collect -->
+    <section class="section" id="s2">
+      <h2><span class="num">2</span> Information We Collect</h2>
+
+      <h3>a) Farm &amp; Livestock Data</h3>
+      <p>You enter and manage the following data within the App:</p>
+      <ul>
+        <li>Cow records (name, tag number, breed, date of birth, weight, status)</li>
+        <li>Calf and breeding records</li>
+        <li>Daily milk production entries (quantity, session, price per litre)</li>
+        <li>Milk sales and buyer information</li>
+        <li>Health records, vaccinations, and deworming logs</li>
+        <li>Feed inventory and daily feed entries</li>
+        <li>Farm expenses, income, loans, and insurance records</li>
+        <li>Staff, shed, maintenance, and equipment records</li>
+        <li>Reminders and notes</li>
+      </ul>
+      <p>This data is stored locally on your device and, if you choose, synced to your Firebase cloud backup.</p>
+
+      <h3>b) Google Account Information (Optional)</h3>
+      <p>If you sign in with Google, we receive:</p>
+      <ul>
+        <li>Your display name</li>
+        <li>Your email address</li>
+        <li>Your profile photo URL</li>
+      </ul>
+      <p>
+        This information is used solely to identify your personal cloud backup space in Firebase Firestore.
+        We do not share this with any third parties.
+      </p>
+
+      <h3>c) Device &amp; Usage Data</h3>
+      <div class="highlight">
+        We do <strong>not</strong> collect analytics, crash reports, advertising identifiers, or usage statistics.
+      </div>
+    </section>
+
+    <!-- 3. How We Use -->
+    <section class="section" id="s3">
+      <h2><span class="num">3</span> How We Use Your Information</h2>
+      <p>We use your information to:</p>
+      <ul>
+        <li>Display and manage your farm records within the App</li>
+        <li>Calculate milk production, income, expenses, and profit/loss reports</li>
+        <li>Provide optional cloud backup and multi-device sync via Firebase Firestore</li>
+        <li>Identify your personal cloud storage using your Google UID</li>
+      </ul>
+      <div class="highlight-warn">
+        <strong>We do NOT:</strong> sell your data to any third party &bull; use your data for advertising &bull; access your data without your action.
+      </div>
+    </section>
+
+    <!-- 4. Data Storage -->
+    <section class="section" id="s4">
+      <h2><span class="num">4</span> Data Storage</h2>
+
+      <h3>Local Storage</h3>
+      <p>
+        All farm data is stored in a local SQLite database on your device.
+        It is accessible only by this App and is protected by your device&rsquo;s operating system security.
+      </p>
+
+      <h3>Cloud Storage (Optional)</h3>
+      <p>
+        If you sign in with Google and enable sync, your data is stored in Firebase Firestore under a path
+        unique to your Google User ID (<code>users/{uid}/...</code>). Firebase Security Rules ensure that
+        only you &mdash; the authenticated user &mdash; can read or write your data.
+        No other user or administrator can access it through the App.
+      </p>
+    </section>
+
+    <!-- 5. Third-Party Services -->
+    <section class="section" id="s5">
+      <h2><span class="num">5</span> Third-Party Services</h2>
+      <p>This App uses the following Google / Firebase services:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Firebase Authentication</td>
+              <td>Google Sign-In</td>
+            </tr>
+            <tr>
+              <td>Firebase Firestore</td>
+              <td>Optional cloud backup &amp; sync</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        These services are subject to Google&rsquo;s Privacy Policy:
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+          https://policies.google.com/privacy
+        </a>
+      </p>
+      <div class="highlight">
+        We do <strong>not</strong> use advertising SDKs, analytics platforms, or any other third-party data processors.
+      </div>
+    </section>
+
+    <!-- 6. Data Security -->
+    <section class="section" id="s6">
+      <h2><span class="num">6</span> Data Security</h2>
+      <ul>
+        <li>Local data is protected by your device&rsquo;s OS-level security</li>
+        <li>Cloud data is protected by Firebase Security Rules (only your UID can access your data)</li>
+        <li>All connections to Firebase are encrypted using TLS</li>
+      </ul>
+      <div class="highlight-warn">
+        No method of transmission over the internet is 100% secure.
+        We encourage you to keep your device and Google account secure.
+      </div>
+    </section>
+
+    <!-- 7. Data Retention & Deletion -->
+    <section class="section" id="s7">
+      <h2><span class="num">7</span> Data Retention &amp; Deletion</h2>
+      <p>Your data is retained until you choose to delete it or uninstall the App.</p>
+      <ul>
+        <li><strong>Local data:</strong> Uninstalling the App removes all local data from your device.</li>
+        <li>
+          <strong>Cloud data:</strong> Use <strong>&ldquo;Delete All Data&rdquo;</strong> in the
+          Backup &amp; Sync screen to permanently delete all your data from Firebase Firestore.
+        </li>
+      </ul>
+      <div class="highlight">We do not retain your data after deletion.</div>
+    </section>
+
+    <!-- 8. Your Rights -->
+    <section class="section" id="s8">
+      <h2><span class="num">8</span> Your Rights</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Right</th>
+              <th>How to exercise it</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Access</td>
+              <td>All data is visible directly in the App</td>
+            </tr>
+            <tr>
+              <td>Correction</td>
+              <td>Edit any record at any time within the App</td>
+            </tr>
+            <tr>
+              <td>Deletion</td>
+              <td>&ldquo;Delete All&rdquo; in Backup &amp; Sync (cloud); uninstall App (local)</td>
+            </tr>
+            <tr>
+              <td>Portability</td>
+              <td>Data export feature planned in a future update</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>For any concerns, contact us at <a href="mailto:mycowfarm.app@gmail.com">mycowfarm.app@gmail.com</a>.</p>
+    </section>
+
+    <!-- 9. Children's Privacy -->
+    <section class="section" id="s9">
+      <h2><span class="num">9</span> Children&rsquo;s Privacy</h2>
+      <p>
+        This App is not directed at children under the age of 13.
+        We do not knowingly collect personal information from children.
+        If you believe a child has provided personal information, please contact us so we can delete it.
+      </p>
+    </section>
+
+    <!-- 10. Changes -->
+    <section class="section" id="s10">
+      <h2><span class="num">10</span> Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. When we do, we will update the
+        &ldquo;Effective Date&rdquo; at the top of this page. Continued use of the App after
+        changes constitutes your acceptance of the revised policy.
+      </p>
+    </section>
+
+    <!-- 11. Contact Us -->
+    <section class="section" id="s11">
+      <h2><span class="num">11</span> Contact Us</h2>
+      <p>If you have any questions or concerns about this Privacy Policy:</p>
+      <div class="contact-card">
+        <p>👤 <strong>Developer:</strong> Rajesh Raju</p>
+        <p>✉️ <strong>Email:</strong> <a href="mailto:mycowfarm.app@gmail.com">mycowfarm.app@gmail.com</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <p>This privacy policy applies to the <strong>My Cow Farm</strong> Android application published on the Google Play Store.</p>
+    <p style="margin-top:6px;">© 2026 Rajesh Raju. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
